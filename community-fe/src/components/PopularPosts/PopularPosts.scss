@@ -1,0 +1,35 @@
+/* src/components/PopularPosts/PopularPosts.scss */
+
+.popular-posts {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem;
+    width: calc(33% - 4rem); // 한 줄에 3개 배치되도록 너비 조정
+
+    &__title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+
+        .popular-posts__item {
+            margin-bottom: 0.5rem;
+
+            h3 {
+                font-size: 1.1rem;
+                margin: 0;
+            }
+
+            p {
+                font-size: 0.9rem;
+                color: #666;
+                margin: 0;
+            }
+        }
+    }
+}
