@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './PopularPosts.scss';
 
 interface Post {
@@ -19,8 +20,9 @@ const PopularPosts: React.FC<PopularPostsProps> = ({ title, posts }) => {
             <ul className="popular-posts__list">
                 {posts.map((post) => (
                     <li key={post.id} className="popular-posts__item">
-                        <h3>{post.title}</h3>
-                        <p>{post.excerpt}</p>
+                        <Link to={`/posts/${post.id}`}>
+                            <p>{post.title}</p>
+                        </Link>
                     </li>
                 ))}
             </ul>
