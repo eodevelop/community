@@ -10,7 +10,7 @@ const Header: React.FC = () => {
         <NavLink to="/" end>
           홈
         </NavLink>
-        <NavLink to="/best">베스트</NavLink>
+        <NavLink to="/posts">게시글 목록</NavLink>
       </nav>
       <nav className="nav-right">
         <NavLink to="/login" className="login-button">
