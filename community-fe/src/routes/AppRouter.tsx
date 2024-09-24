@@ -4,6 +4,7 @@ import HomePage from '../pages/HomePage';
 import PostDetailPage from '../pages/PostDetailPage';
 import LoginPage from '../pages/LoginPage';
 import PostListPage from '../pages/PostListPage';
+import WritePage from '../pages/WritePage';
 
 const AppRouter: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const AppRouter: React.FC = () => {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/posts" element={<PostListPage />} />
       <Route path="/posts/:id" element={<PostDetailPage />} />
+      <Route path="/write" element={<WritePage />} />
     </Routes>
   );
 };
